@@ -1,0 +1,181 @@
+/* =============================================
+   LOGIXLAB LANDING PAGE - Custom Styles
+   Clean, modern, educational design
+   ============================================= */
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== ANIMATIONS ===== */
+
+/* Fade-in animation on scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pulse animation for hero illustration */
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); opacity: 0.1; }
+  50% { transform: scale(1.05); opacity: 0.15; }
+}
+
+@keyframes pulse-slower {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.08); opacity: 0.25; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-pulse-slower {
+  animation: pulse-slower 5s ease-in-out infinite;
+}
+
+/* ===== HOVER EFFECTS ===== */
+
+/* Button hover effect - slight lift */
+.btn-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Card hover effect - lift + shadow */
+.stat-card:hover,
+.program-card:hover,
+.feature-card:hover,
+.testimonial-card:hover,
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Timeline items hover */
+.timeline-item:hover .w-16 {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* ===== FAQ ACCORDION ===== */
+
+.faq-question.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer.open {
+  max-height: 300px;
+}
+
+/* ===== NAVBAR ===== */
+
+/* Navbar shrink on scroll */
+#navbar.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Nav link active state */
+.nav-link.active {
+  color: #2563EB;
+  font-weight: 600;
+}
+
+/* ===== BACK TO TOP ===== */
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet adjustments */
+@media (max-width: 1023px) {
+  .fade-in {
+    transform: translateY(20px);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 639px) {
+  .fade-in {
+    transform: translateY(15px);
+    transition-duration: 0.5s;
+  }
+
+  /* Adjust hero for very small screens */
+  #hero h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+/* Focus styles for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== SELECTION ===== */
+
+::selection {
+  background-color: #2563EB;
+  color: white;
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}

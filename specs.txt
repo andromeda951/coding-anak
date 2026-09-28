@@ -1,0 +1,105 @@
+LOGIXLAB LANDING PAGE SPECIFICATION
+
+GOAL Create a modern, responsive landing page for LogixLab using only: -
+HTML5 - Tailwind CSS (CDN) - Vanilla JavaScript
+
+Do NOT use: - React - Vue - Angular - Next.js - Vite - Build tools -
+Backend
+
+PROJECT STRUCTURE / |- index.html |- css/ | |- style.css |- js/ | |-
+script.js |- images/
+
+STYLE - Clean, modern, educational - Blue color palette (#2563EB) -
+Rounded cards - Soft shadows - Smooth animations - Mobile first -
+Maximum width 1200px
+
+GOOGLE FONTS - Poppins (Heading) - Inter (Body)
+
+SECTIONS
+
+1.  Sticky Navbar
+
+-   Logo: LogixLab
+-   Menu: Home, Program, Mengapa Kami, Testimoni, FAQ, Kontak
+-   CTA button: Konsultasi Gratis
+-   Mobile hamburger menu
+
+2.  Hero Headline: “Belajar Coding Jadi Lebih Mudah”
+
+Subtitle: “Les Scratch, Python, dan Olimpiade Informatika untuk SD
+hingga SMA.”
+
+Buttons: - Konsultasi Gratis - Lihat Program
+
+Right side: Modern programming illustration.
+
+3.  Statistics Four cards:
+
+-   7+ Tahun Mengajar
+-   100+ Jam Mengajar
+-   Online & Offline
+-   Kurikulum Personal
+
+4.  Program Three cards.
+
+Scratch - Visual Programming - Game - Animation - Logic
+
+Python - Dasar Pemrograman - Function - List - Dictionary - Mini Project
+
+Olimpiade Informatika - Algoritma - Struktur Data - Competitive
+Programming - Persiapan KSN
+
+5.  Mengapa LogixLab 6 feature cards:
+
+-   Kurikulum Personal
+-   Fokus Problem Solving
+-   Banyak Latihan
+-   Jadwal Fleksibel
+-   Monitoring Progress
+-   Tutor Berpengalaman
+
+6.  Alur Belajar Timeline: Konsultasi ↓ Assessment ↓ Kurikulum ↓ Belajar
+    ↓ Evaluasi
+
+7.  Contoh Project Scratch:
+
+-   Maze Game
+-   Catch The Cat
+
+Python: - Calculator - Todo List
+
+Olimpiade: - Binary Search - Graph
+
+8.  Testimoni Three modern cards with:
+
+-   Photo placeholder
+-   Name
+-   Rating
+-   Comment
+
+9.  FAQ Accordion:
+
+-   Apakah harus sudah bisa coding?
+-   Bisa online?
+-   Umur berapa bisa mulai?
+-   Berapa lama satu pertemuan?
+-   Bisa persiapan KSN?
+
+10. CTA Blue background. Large WhatsApp button.
+
+11. Footer
+
+-   Logo
+-   Navigation
+-   WhatsApp
+-   Instagram
+-   Email
+
+FEATURES - Smooth scrolling - Fade-in animation on scroll - Hover effect
+on cards - Hover buttons - Back to top button - Floating WhatsApp button
+
+RESPONSIVE - Desktop - Tablet - Mobile
+
+QUALITY - Semantic HTML - Accessible - Clean code - Comments in code -
+Separate HTML, CSS and JS - No placeholder lorem ipsum - Ready to deploy
+by opening index.html
